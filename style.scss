@@ -1,0 +1,64 @@
+body {
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+$bg-blue: #404eed;
+$text-blue: #5865f2;
+
+$btn-color-hover: $text-blue;
+
+.btn {
+    color: black;
+    background: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: saturate($color: white, $amount: 10%);
+        color: $btn-color-hover;
+        box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    }
+}
+
+.max-width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-nav-bar {
+  background: #404eed;
+
+  .nav-bar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+
+      .nav {
+        padding: 0 10px;
+        margin: 0 10px;
+
+        .link {
+          font-weight: bold;
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
