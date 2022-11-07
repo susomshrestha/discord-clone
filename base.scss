@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @mixin btn($color, $bg) {
     color: $color;
     background: $bg;
@@ -21,6 +23,10 @@
 
 .btn {
     @include btn(black, white);
+}
+
+.btn-primary {
+    @include btn(white, $btn-primary)
 }
 
 .btn-sm {

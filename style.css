@@ -16,6 +16,24 @@
   background: #bfbfbf;
 }
 
+.btn-primary {
+  color: white;
+  background: #5865f2;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 20px 40px;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary:hover {
+  background: #1225eb;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-primary:active {
+  background: #0f1dbc;
+}
+
 .btn-sm {
   padding: 10px 20px;
 }
@@ -48,6 +66,19 @@ body {
   margin: 0 auto;
 }
 
+#menu-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
 .section-nav-bar {
   background: #404eed;
 }
@@ -60,10 +91,7 @@ body {
   overflow: hidden;
 }
 .section-nav-bar .nav-bar .nav-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+  display: none;
 }
 .section-nav-bar .nav-bar .nav-links .nav {
   padding: 0 10px;
@@ -75,6 +103,68 @@ body {
   text-decoration: none;
 }
 .section-nav-bar .nav-bar .nav-links .nav .link:hover {
+  text-decoration: underline;
+}
+.section-nav-bar .nav-bar .login {
+  display: flex;
+  align-items: center;
+}
+.section-nav-bar .nav-bar .login .menu {
+  display: block;
+  cursor: pointer;
+  margin-left: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .section-nav-bar .nav-bar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .section-nav-bar .nav-bar .login .menu {
+    display: none;
+  }
+}
+.section-nav-bar .right-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background: white;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow-y: scroll;
+}
+.section-nav-bar .right-menu .menu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.section-nav-bar .right-menu hr {
+  margin: 20px 20px 0;
+}
+.section-nav-bar .right-menu .download {
+  margin: 20px 0;
+  text-align: center;
+}
+.section-nav-bar .right-menu .nav-links {
+  padding: 20px;
+}
+.section-nav-bar .right-menu .nav-links .nav {
+  font-size: 0.875rem;
+  padding: 10px;
+}
+.section-nav-bar .right-menu .nav-links .nav .link {
+  font-weight: bold;
+  color: #23272a;
+  text-decoration: none;
+}
+.section-nav-bar .right-menu .nav-links .nav .link:hover {
   text-decoration: underline;
 }
 
