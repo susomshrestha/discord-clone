@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+@mixin btn($color, $bg) {
+    color: $color;
+    background: $bg;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        background: darken($bg, 15%);
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    }
+
+    &:active {
+        background: darken($bg, 25%);
+    }
+}
+
+
+.btn {
+    @include btn(black, white);
+}
+
+.btn-primary {
+    @include btn(white, $btn-primary)
+}
+
+.btn-sm {
+    padding: 10px 20px;
+}
+
+.btn-black {
+    @include btn(white, #343434);
+}
