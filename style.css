@@ -181,15 +181,18 @@ body {
   text-align: center;
   position: relative;
 }
+.section-header .header .title {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
 @media screen and (min-width: 768px) {
   .section-header .header {
     padding: 100px;
   }
-}
-.section-header .header .title {
-  font-size: 4rem;
-  font-weight: 800;
-  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  .section-header .header .title {
+    font-size: 4rem;
+  }
 }
 .section-header .header .sub-title {
   margin-top: 40px;
@@ -275,7 +278,7 @@ body {
 }
 
 .img-desc-box {
-  padding: 40px;
+  padding: 80px 40px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(1, 1fr);
@@ -337,4 +340,35 @@ body {
   .img-desc-box .image {
     grid-column: span 2;
   }
+}
+.section-chat-room .img-desc-box {
+  grid-template-columns: repeat(1, 1fr);
+}
+.section-chat-room .img-desc-box .title {
+  line-height: 1;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.section-chat-room .start-journey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px 80px;
+  position: relative;
+}
+.section-chat-room .start-journey .stars {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.section-chat-room .start-journey .title {
+  margin-top: 25px;
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.section-chat-room .start-journey .button {
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */

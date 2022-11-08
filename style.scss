@@ -143,16 +143,20 @@ body {
 		padding: 20px;
 		max-width: 80%;
 		text-align: center;
-		position: relative;
+		position: relative;		
+
+		.title {
+			font-size: $font-4xl;
+			font-weight: 800;
+			font-family: $font-headline;
+		}
 
 		@media screen and (min-width: 768px) {
 			padding: 100px;
-		}
 
-		.title {
-			font-size: $font-5xl;
-			font-weight: 800;
-			font-family: $font-headline;
+			.title {
+				font-size: $font-5xl;
+			}
 		}
 
 		.sub-title {
@@ -248,7 +252,7 @@ body {
 }
 
 .img-desc-box {
-	padding: 40px;
+	padding: 80px 40px;
 	display: grid;
 	gap: 20px;
 	grid-template-columns: repeat(1, 1fr);
@@ -327,5 +331,45 @@ body {
 		.image {
 			grid-column: span 2;
 		}
+	}
+}
+
+.section-chat-room {
+	.img-desc-box {
+		grid-template-columns: repeat(1, 1fr);
+
+		.title {
+			line-height: 1;
+			font-size: $font-4xl;
+			font-weight: 800;
+		}
+	}
+
+	.start-journey {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 40px 80px;
+		position: relative;
+
+		.stars {
+			position: absolute;
+			top: 0;
+			overflow: hidden;
+			width: 100%;
+		}
+
+		.title {
+			margin-top: 25px;
+			font-family: $font-headline;
+			font-size: $font-3xl;
+			font-weight: 700;
+		}
+
+		.button {
+			margin-top: 40px;
+		}
+
 	}
 }
