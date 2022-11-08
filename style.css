@@ -181,15 +181,18 @@ body {
   text-align: center;
   position: relative;
 }
+.section-header .header .title {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
 @media screen and (min-width: 768px) {
   .section-header .header {
     padding: 100px;
   }
-}
-.section-header .header .title {
-  font-size: 4rem;
-  font-weight: 800;
-  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  .section-header .header .title {
+    font-size: 4rem;
+  }
 }
 .section-header .header .sub-title {
   margin-top: 40px;
@@ -267,4 +270,105 @@ body {
     right: -150px;
     bottom: 0;
   }
+}
+
+.section-voice-chat,
+.section-chat-room {
+  background: #f6f6f6;
+}
+
+.img-desc-box {
+  padding: 80px 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-flow: row;
+}
+.img-desc-box.rev .image {
+  grid-row: 1;
+}
+.img-desc-box.rev .desc {
+  grid-row: 2;
+}
+.img-desc-box .image {
+  align-self: center;
+}
+.img-desc-box .image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.img-desc-box .desc {
+  justify-self: center;
+  color: #23272a;
+}
+.img-desc-box .desc .title {
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.img-desc-box .desc .content {
+  line-height: 1.5;
+  font-size: 1.125rem;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .img-desc-box {
+    padding: 80px;
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-desc-box .desc .title {
+    margin-top: 40px;
+    font-size: 3rem;
+  }
+  .img-desc-box .desc .content {
+    margin-top: 40px;
+  }
+  .img-desc-box.rev .image {
+    grid-row: 1;
+  }
+  .img-desc-box.rev .desc {
+    grid-row: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .img-desc-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .img-desc-box .image {
+    grid-column: span 2;
+  }
+}
+.section-chat-room .img-desc-box {
+  grid-template-columns: repeat(1, 1fr);
+}
+.section-chat-room .img-desc-box .title {
+  line-height: 1;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.section-chat-room .start-journey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px 80px;
+  position: relative;
+}
+.section-chat-room .start-journey .stars {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.section-chat-room .start-journey .title {
+  margin-top: 25px;
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.section-chat-room .start-journey .button {
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */

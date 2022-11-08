@@ -143,16 +143,20 @@ body {
 		padding: 20px;
 		max-width: 80%;
 		text-align: center;
-		position: relative;
-
-        @media screen and (min-width: 768px) {
-            padding: 100px;
-        }
+		position: relative;		
 
 		.title {
-			font-size: $font-5xl;
+			font-size: $font-4xl;
 			font-weight: 800;
 			font-family: $font-headline;
+		}
+
+		@media screen and (min-width: 768px) {
+			padding: 100px;
+
+			.title {
+				font-size: $font-5xl;
+			}
 		}
 
 		.sub-title {
@@ -239,5 +243,133 @@ body {
 				bottom: 0;
 			}
 		}
+	}
+}
+
+.section-voice-chat,
+.section-chat-room {
+	background: $bg-off-white;
+}
+
+.img-desc-box {
+	padding: 80px 40px;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-auto-flow: row;
+
+	&.rev {
+		.image {
+			grid-row: 1;
+		}
+
+		.desc {
+			grid-row: 2;
+		}
+	}
+
+	.image {
+		align-self: center;
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	.desc {
+		justify-self: center;
+		color: $text-black;
+
+		.title {			
+			font-family: $font-headline;
+			font-size: $font-3xl;
+			font-weight: 700;
+		}
+
+		.content {
+			line-height: 1.5;
+			font-size: $font-md;
+			margin-top: 20px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.img-desc-box {
+		padding: 80px;
+		gap: 80px;
+
+		.desc {
+			.title {
+				margin-top: 40px;
+				font-size: $font-4xl;
+			}
+
+			.content {
+				margin-top: 40px;
+			}
+		}
+
+		&.rev {
+			.image {
+				grid-row: 1;
+			}
+	
+			.desc {
+				grid-row: 1;
+			}
+		}
+
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.img-desc-box {
+		grid-template-columns: repeat(3, 1fr);
+
+		.image {
+			grid-column: span 2;
+		}
+	}
+}
+
+.section-chat-room {
+	.img-desc-box {
+		grid-template-columns: repeat(1, 1fr);
+
+		.title {
+			line-height: 1;
+			font-size: $font-4xl;
+			font-weight: 800;
+		}
+	}
+
+	.start-journey {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 40px 80px;
+		position: relative;
+
+		.stars {
+			position: absolute;
+			top: 0;
+			overflow: hidden;
+			width: 100%;
+		}
+
+		.title {
+			margin-top: 25px;
+			font-family: $font-headline;
+			font-size: $font-3xl;
+			font-weight: 700;
+		}
+
+		.button {
+			margin-top: 40px;
+		}
+
 	}
 }
