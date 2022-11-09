@@ -35,6 +35,10 @@ body {
 		padding: 20px;
 		overflow: hidden;
 
+		.link {
+			color: white;
+		}
+
 		.nav-links {
 			display: none;
 
@@ -100,6 +104,10 @@ body {
 			justify-content: space-between;
 			align-items: center;
 			padding: 20px;
+
+			.close-icon {
+				cursor: pointer;
+			}
 		}
 
 		hr {

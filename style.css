@@ -90,6 +90,9 @@ body {
   padding: 20px;
   overflow: hidden;
 }
+.section-nav-bar .nav-bar .link {
+  color: white;
+}
 .section-nav-bar .nav-bar .nav-links {
   display: none;
 }
@@ -144,6 +147,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+.section-nav-bar .right-menu .menu-head .close-icon {
+  cursor: pointer;
 }
 .section-nav-bar .right-menu hr {
   margin: 20px 20px 0;
