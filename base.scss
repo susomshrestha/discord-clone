@@ -1,5 +1,6 @@
 @import './variables.scss';
 
+// mixin for button
 @mixin btn($color, $bg) {
     color: $color;
     background: $bg;
