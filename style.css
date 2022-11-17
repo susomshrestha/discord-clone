@@ -80,7 +80,12 @@ body {
 }
 
 .section-nav-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
   background: #404eed;
+  z-index: 9999;
 }
 .section-nav-bar .nav-bar {
   color: white;
@@ -373,6 +378,8 @@ body {
   top: 0;
   overflow: hidden;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .section-chat-room .start-journey .title {
   margin-top: 25px;
