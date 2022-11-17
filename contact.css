@@ -75,7 +75,6 @@ body {
   flex-direction: column;
 }
 .contact-section .contact-wrap .contact .left {
-  width: 100%;
   padding: 40px;
   background: #23272a;
   color: white;
@@ -83,13 +82,12 @@ body {
 .contact-section .contact-wrap .contact .left h1 {
   color: #5865f2;
 }
-.contact-section .contact-wrap .contact .left p {
+.contact-section .contact-wrap .contact .left .lorem {
   margin-top: 40px;
   line-height: 2;
 }
 .contact-section .contact-wrap .contact .right {
   background: white;
-  width: 100%;
   padding: 40px;
 }
 .contact-section .contact-wrap .contact .right .form .input-field {
