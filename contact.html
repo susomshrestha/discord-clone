@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Clone</title>
+    <title>Document</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -141,115 +142,82 @@
     </div>
     <!-- nav bar and menu end -->
 
-    <!-- main content start -->
-    <div class="section-header">
+    <div class="contact-section">
         <div class="max-width">
+            <div class="contact-wrap">
+                <div class="contact">
+                    <div class="left">
+                        <h1>
+                            Contact Us
+                        </h1>
+                        <h2>
+                            We'd love to hear from you.
+                        </h2>
+                        <div class="lorem">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2>Contact Us</h2>
+                        <form class="form">
+                            <div class="input-field">
+                                <label class="label" for="name">Name</label>
+                                <input type="text" class="input" id="name" required>
+                            </div>
+                            <div class="input-field">
+                                <label class="label" for="email">Email</label>
+                                <input type="email" class="input" id="email" required>
+                            </div>
+                            <div class="input-field">
+                                <label class="label" for="phone">Phone Number</label>
+                                <input type="tel" class="input" id="phone">
+                            </div>
+                            <div class="input-field input-radio">
+                                <label class="label">Priority</label>
+                                <div>
+                                    <input type="radio" id="low" name="drone" value="low" checked>
+                                    <label for="low">Low</label>
+                                </div>
 
-            <div class="header">
-                <div class="title">
-                    IMAGINE A PLACE...
-                </div>
-                <div class="sub-title">
-                    ...where you can belong to a school club, a gaming group, or a worldwide art community. <br>
-                    Where just you and a handful of friends can spend time together. A place that makes it easy <br>
-                    to talk every day and hang out more often.
-                </div>
-                <div class="buttons">
-                    <button class="btn">Download for Windows</button>
-                    <button class="btn btn-black">Open Discord in your browser</button>
-                </div>
-            </div>
-            <div class="backgrounds">
-                <img src="/assets/images/clouds.svg" class="cloud" alt="clouds">
-                <img src="/assets/images/bg-left.svg" class="bg-left" alt="shoes">
-                <img src="/assets/images/bg-right.svg" class="bg-right" alt="group">
-            </div>
-        </div>
-    </div>
-    <div class="section-channels">
-        <div class="max-width">
-            <div class="channels img-desc-box">
-                <div class="image">
-                    <img alt="channel" src="./assets/images/channels.svg">
-                </div>
-                <div class="desc">
-                    <div class="title">
-                        Create an invite-only place where you belong
-                    </div>
-                    <div class="content">
-                        Discord servers are organized into topic-based channels where you can collaborate, share, and
-                        just talk about your day without clogging up a group chat.
+                                <div>
+                                    <input type="radio" id="medium" name="drone" value="medium">
+                                    <label for="medium">Medium</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" id="high" name="drone" value="high">
+                                    <label for="high">High</label>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label class="label" for="phone">Subject</label>
+                                <select name="subject" id="subject" class="input">
+                                    <option value="generalQuestion">General Question</option>
+                                    <option value="installationQuery">Installation Query</option>
+                                    <option value="troubleshooting">Troubleshooting</option>
+                                    <option value="audi">Other</option>
+                                </select>
+                            </div>
+                            <div class="input-field">
+                                <label class="label" for="description">Description</label>
+                                <textarea class="input" id="description" name="description" rows="5"
+                                    cols="50"></textarea>
+                            </div>
+                            <div class="input-field">
+                                <input class="btn btn-primary" type="submit">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section-voice-chat">
-        <div class="max-width">
-            <div class="voice-chat img-desc-box rev">
-                <div class="desc">
-                    <div class="title">
-                        Where hanging out is easy
-                    </div>
-                    <div class="content">
-                        Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around
-                        and instantly pop in to talk without having to call.
-                    </div>
-                </div>
-                <div class="image">
-                    <img alt="voice chat" src="./assets/images/voice-chat.svg">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section-community-roles">
-        <div class="max-width">
-            <div class="community-roles img-desc-box">
-                <div class="image">
-                    <img alt="community roles" src="./assets/images/community-roles.svg">
-                </div>
-                <div class="desc">
-                    <div class="title">
-                        From few to a fandom
-                    </div>
-                    <div class="content">
-                        Get any community running with moderation tools and custom member access. Give members special
-                        powers, set up private channels, and more.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section-chat-room">
-        <div class="max-width">
-            <div class="chat-room img-desc-box">
-                <div class="desc">
-                    <div class="title">
-                        RELIABLE TECH FOR STAYING CLOSE
-                    </div>
-                    <div class="content">
-                        Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch
-                        friends stream their games, or gather up and have a drawing session with screen share.
-                    </div>
-                </div>
-                <div class="image">
-                    <img alt="chat room" src="./assets/images/chat-room.svg">
-                </div>
-            </div>
-            <div class="start-journey">
-                <div class="stars">
-                    <img alt="ready-stars" src="./assets/images/ready-stars.svg">
-                </div>
-                <div class="title">
-                    Ready to start your journey?
-                </div>
-                <div class="button">
-                    <button class="btn btn-primary">Download For Windows</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- main content end -->
 
     <!-- footer start -->
     <div class="section-footer">
@@ -425,7 +393,6 @@
         </div>
     </div>
     <!-- footer end -->
-
 </body>
 
 </html>

@@ -1,0 +1,90 @@
+@import "./base.scss";
+
+body {
+	font-family: $font-primary;
+	margin: 0;
+}
+
+.contact-section {
+	background: $bg-off-white;
+
+	.contact-wrap {
+		padding: 40px;
+
+		.contact {
+			display: flex;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+			border-radius: 4px;
+			overflow: hidden;
+            flex-direction: column;
+
+			.left {
+				padding: 40px;
+				background: $bg-black;
+				color: white;
+
+				h1 {
+					color: $text-blue;
+				}
+
+                .lorem {
+                    margin-top: 40px;
+                    line-height: 2;
+                }
+			}
+
+			.right {
+                background: white;
+				padding: 40px;
+
+				.form {
+                    .input-field {
+                        color: $text-black;
+                        padding-bottom: 20px;
+
+                        .label {
+                            font-size: $font-sm;
+                            font-weight: 600;
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+
+                        .input {
+                            box-sizing: border-box;
+                            box-shadow: rgb(60 66 87 / 16%) 0px 0px 0px 1px;
+                            padding: 8px 16px;
+                            min-height: 40px;
+                            border: unset;
+                            border-radius: 4px;
+                            outline-color: $text-blue;
+                            width: 100%;
+                        }
+
+                    }
+
+                    .input-radio {
+                        div {
+                            padding: 8px 16px;
+                            width: fit-content;
+
+                            input, 
+                            label {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+				}
+			}
+		}
+
+        @media (min-width: 1024px) {
+            .contact {
+                flex-direction: row;
+
+                .left, .right {
+                    width: 50%;
+                }
+            }
+        }
+	}
+}
